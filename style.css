@@ -1,0 +1,57 @@
+body{
+    background: black;
+    
+    width: 90vw;
+    height: 90vh;
+}
+
+
+
+.circle {
+    position: relative;
+    transform-origin: 200% center;
+    display: block;
+    width: 100px; 
+    height: 100px;
+    background: white;
+    border-radius: 30%;
+    animation: move 5s infinite linear;
+        
+}
+
+@keyframes move {
+    from {
+        top: 10%;
+        left: 5%;
+      
+
+    }
+    25% {
+        top: 10%;
+        left: 90%;
+       
+    }
+    50% {
+        top: 90%;
+        left: 90%;
+      
+    }
+
+    75% {
+        top: 90%;
+        left: 5%;
+       
+    }
+
+    to {
+        top: 10%;
+        left: 5%;
+     
+       
+    }
+}
+
+
+
+
+
