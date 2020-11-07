@@ -18,8 +18,8 @@ body {
 .circle {
     position: relative;
     transform-origin: 200% center;
-    width: 100px; 
-    height: 100px;
+    width: 10%; 
+    height: 10%;
     background: white;
     border-radius: 30%;
     animation: move 5s infinite linear;
