@@ -2,7 +2,6 @@ body {
     background: black;
     width: 96vw;
     height: 96vh;
-    min-width: 580px;
     display: flex;
 }
 
