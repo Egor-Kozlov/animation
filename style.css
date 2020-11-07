@@ -1,53 +1,53 @@
 body{
     background: black;
-    
-    width: 90vw;
-    height: 90vh;
+    height: 98vh;
+    display: flex;
 }
 
-
+.square{
+    margin: 0 auto;
+    margin-top: 6.5%;
+    width: 50%;
+    height: 75%;
+    background: silver;
+}
 
 .circle {
     position: relative;
     transform-origin: 200% center;
-    display: block;
     width: 100px; 
     height: 100px;
     background: white;
     border-radius: 30%;
     animation: move 5s infinite linear;
-        
 }
 
 @keyframes move {
     from {
-        top: 10%;
-        left: 5%;
-      
-
+        top: 3%;
+        left: 3%;
     }
     25% {
-        top: 10%;
-        left: 90%;
-       
+        top: 3%;
+        left: 88%;
+        background: springgreen;
     }
     50% {
-        top: 90%;
-        left: 90%;
-      
+        top: 82%;
+        left: 88%;
+        background: tomato;
     }
 
     75% {
-        top: 90%;
-        left: 5%;
-       
+        top: 82%;
+        left: 3%;
+        background: violet;
     }
 
     to {
-        top: 10%;
-        left: 5%;
-     
-       
+        top: 3%;
+        left: 3%;
+        background:white;
     }
 }
 
