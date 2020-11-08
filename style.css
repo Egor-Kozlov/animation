@@ -1,26 +1,22 @@
 body {
-    background: black;
-    width: 96vw;
-    height: 96vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .square {
-    margin: 0 auto;
-    box-sizing: border-box;
-    margin-top: 6.5%;
+    position: relative;
     width: 700px;
     height: 700px;
     background: rgb(124, 78, 78);
 }
 
 .circle {
-    position: relative;
-    transform-origin: 200% center;
-    width: 10%; 
-    height: 10%;
+    position: absolute;
+    width: 100px; 
+    height: 100px;
     background: white;
-    border-radius: 30%;
     animation: move 5s infinite linear;
 }
 
@@ -29,28 +25,30 @@ body {
 }
 
 @keyframes move {
-    from {
-        top: 3%;
-        left: 3%;
+    0% {
+        top: 20px;
+        left: 20px;
     }
     25% {
-        top: 3%;
-        left: 80%;
+        top: 20px;
+        left: calc(100% - 120px);
         background: springgreen;
+        border-radius: 30%;
     }
     50% {
-        top: 82%;
-        left: 80%;
+        top: calc(100% - 120px);
+        left: calc(100% - 120px);
         background: tomato;
+        border-radius: 70%;
     }
     75% {
-        top: 82%;
-        left: 3%;
+        top: calc(100% - 120px);
+        left: 20px;
         background: violet;
     }
-    to {
-        top: 3%;
-        left: 3%;
+    100% {
+        top: 20px;
+        left: 20px;
         background:white;
     }
 }
